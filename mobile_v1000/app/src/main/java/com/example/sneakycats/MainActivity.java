@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        WebView myWebView = new WebView(activityContext);
-        WebSettings webSettings = myWebViewCat.getSettings();
+        WebView myWebView = (WebView) findViewById(R.id.webview);
+        WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         setContentView(myWebView);
         myWebView.loadUrl("http://fesusrocuts.tech:5001/");
