@@ -5,12 +5,33 @@ Starts a Flask web application
 
 
 from flask import Flask, render_template
+from flask_mongoalchemy import MongoAlchemy
 
-app = Flask(__name__, static_folder='/static')
+
+app = Flask(__name__)
+app.config["MONGOALCHEMY_DATABASE"] = "cats"
+db = MongoAlchemy(app)
 app.config['ENV'] = 'development'
 app.config['DEBUG'] = True
 app.config['TESTING'] = True
 
+
+class Cats(db.Document):
+    name = db.StringField()
+    phone = db.StringField()
+
+
+def create():
+    cat = Cats(name="Test", phone="Default")
+    cat.save()
+
+def update(name):
+    cat = Cats.query.filter(Cats.name == name).first()
+    cat.save()
+
+def remove(id):
+    cat = Cats.query.get(id)
+    cat.remove()
 
 @app.route('/', strict_slashes=False)
 def index():

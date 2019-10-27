@@ -1,3 +1,20 @@
-header.masthead{
-	background-image: url(../img/01.jpg)
+h1.masthead-heading.mb-0 {
+	color: #1e2225;
+}
+h2.masthead-subheading.mb-0 {
+	color: #1e2225;
+}
+header.masthead .bg-circle-1 {
+	height: 90rem;
+	width: 90rem;
+	bottom: -55rem;
+	left: -55rem;
+	background-image: url(/static/assets/img/background_image01.jpg);
+} 
+header.masthead .bg-circle-2 {
+	height: 50rem;
+	width: 50rem;
+	top: -25rem;
+	right: -25rem;
+	background-image: url(/static/assets/img/background_image01.jpg);
 }
