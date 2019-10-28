@@ -25,13 +25,16 @@ def create():
     cat = Cats(name="Test", phone="Default")
     cat.save()
 
+
 def update(name):
     cat = Cats.query.filter(Cats.name == name).first()
     cat.save()
 
+
 def remove(id):
     cat = Cats.query.get(id)
     cat.remove()
+
 
 @app.route('/', strict_slashes=False)
 def index():
@@ -54,12 +57,12 @@ def phonesave():
     # 200 connect, 201 create register, 204 no content,
     return '{"status":"200"}'
 
-#@app.route('phone/report')
-#def phonereport():
+# @app.route('phone/report')
+# def phonereport():
 #    pass
 
 
 if __name__ == '__main__':
         app.run(host='0.0.0.0', port='5000')
 
-#curl -X POST -H "Content-Type: application/json" -d @phone/cats.json http://localhost:8080/phonesave
+# curl -X POST -H "Content-Type: application/json" -d @phone/cats.json http://localhost:8080/phonesave

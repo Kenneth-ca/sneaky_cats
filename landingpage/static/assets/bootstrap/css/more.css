@@ -10,11 +10,19 @@ header.masthead .bg-circle-1 {
 	bottom: -55rem;
 	left: -55rem;
 	background-image: url(/static/assets/img/background_image01.jpg);
-} 
+}
 header.masthead .bg-circle-2 {
 	height: 50rem;
 	width: 50rem;
 	top: -25rem;
 	right: -25rem;
 	background-image: url(/static/assets/img/background_image01.jpg);
+}
+h2.about_title {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
 }
