@@ -18,11 +18,24 @@ header.masthead .bg-circle-2 {
 	right: -25rem;
 	background-image: url(/static/assets/img/background_image01.jpg);
 }
-h2.about_title {
+header.masthead h2.about_title {
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	background-color: #fff;
+}
+
+header.masthead p.about_text {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #212529;
-	text-align: left;
+	text-align: justify;
 	background-color: #fff;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+    margin-inline-start: 10em;
+    margin-inline-end: 10em;
 }
