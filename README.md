@@ -1,7 +1,7 @@
 # sneaky_cats
 Final project about Security
 
-![sneaky_logo](assets/img/read01.png)
+![sneaky_logo](/landingpage/assets/img/read01.png)
 
 ## About
 
