@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+while [ 1 ]; do
+  n=$(netstat -lt | grep 5000 | wc -l)
+  if [ $n -eq 0 ]; then
+    echo "Loading service for final project"
+    sudo ./kill
+    sleep 1
+    sudo ./up
+  fi
+  sleep 60
+done

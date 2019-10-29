@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo /home/ubuntu/sneaky_cats/landingpage/run.py &
