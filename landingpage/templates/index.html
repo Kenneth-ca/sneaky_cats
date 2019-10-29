@@ -18,7 +18,7 @@
         <div class="container"><a class="navbar-brand" href="#">Sneaky Cats</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Download</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{{ url_for('static', filename='download/app.apk') }}">Download</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
                 </ul>
             </div>
@@ -28,7 +28,7 @@
         <div class="masthead-content">
             <div class="container">
                 <h1 class="masthead-heading mb-0">Sneaky Cats</h1>
-                <h2 class="masthead-subheading mb-0">An unlimited collection of lovely cats!</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="#">Download</a></div>
+                <h2 class="masthead-subheading mb-0">An unlimited collection of lovely cats!</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="{{ url_for('static', filename='download/app.apk') }}">Download</a></div>
         </div>
         <div class="bg-circle-1 bg-circle"></div>
         <div class="bg-circle-2 bg-circle"></div>
