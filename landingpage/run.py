@@ -40,5 +40,16 @@ def postJsonHandler():
     return '{"status":"200"}'
 
 
+@app.route('/phone/report', strict_slashes=False)
+def report():
+    """ Route to present report """
+    print("Hola")
+    data = mongofile.collection.find()
+    list = []
+    for c in data:
+        list.append(c)
+    return render_template('report.html', list=list)
+
+
 if __name__ == '__main__':
         app.run(host='0.0.0.0', port='5000')
