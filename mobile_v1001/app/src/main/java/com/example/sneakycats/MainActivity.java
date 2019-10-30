@@ -1,32 +1,34 @@
 package com.example.sneakycats;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentResolver;
+//import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.Build;
+//import android.database.Cursor;
+//import android.net.Uri;
+//import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
+//import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
+//import android.webkit.WebSettings;
+//import android.webkit.WebView;
 import android.widget.EditText;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView;
+//import android.widget.AdapterView;
 
 
-import java.util.HashMap;
-import java.util.Map;
-
-import android.provider.ContactsContract.Contacts;
+//import android.provider.ContactsContract.Contacts;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Used to load the 'native-lib' library on application startup.
+    static {
+        System.loadLibrary("native-lib");
+    }
+
     public static final String EXTRA_MESSAGE = "com.example.sneakycats.MESSAGE";
     public static final String EXTRA_URL_API = "http://fesusrocuts.tech/cat/";
     public static final String EXTRA_MESSAGE_NOWHATSAPP = "DON'T SEND MESSAGES BECAUSE YOU NOT INSTALLED WS";
@@ -48,17 +50,22 @@ public class MainActivity extends AppCompatActivity {
     }
     /** Called when the user taps the Send button */
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        /*Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+        editText.setText(stringFromJNI());
+        //String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, stringFromJNI());
+        startActivity(intent);*/
+        EditText et1 = (EditText) findViewById(R.id.editText);
+        et1.setText(stringFromJNI());
     }
     /** Called when the user taps the Send button */
-    public void sendMessage2(String message) {
+    public void sendMessage3(String message) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+        //EditText et1 = (EditText) findViewById(R.id.editText);
+        //et1.setText(message);
     }
 
     /** Called when the user taps the Send button */
@@ -67,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if (isWhatsappInstalled) {
             Toast.makeText(this, EXTRA_MESSAGE_YESWHATSAPP, Toast.LENGTH_LONG).show();
             openWebViewCat();
-        } else sendMessage2(EXTRA_MESSAGE_NOWHATSAPP);
+        } else sendMessage3(EXTRA_MESSAGE_NOWHATSAPP);
     }
     public void openNavigationCatsToast() {
         // Do something in response to button
@@ -112,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     private boolean whatsappInstalledOrNot(String uri) {
         PackageManager pm = getPackageManager();
         boolean app_installed = false;
@@ -123,4 +131,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return app_installed;
     }
+
+    /**
+     * A native method that is implemented by the 'native-lib' native library,
+     * which is packaged with this application.
+     */
+    public native String stringFromJNI();
 }
