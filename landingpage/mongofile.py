@@ -22,3 +22,14 @@ def InsertDataCats(CatData_date):
     This function adds a date for the register
     """
     insertCat = collection.insert(CatData_date)
+
+
+def UpdateCountCats(count_int):
+    """
+    This function updates a register
+    """
+    myquery = ({"count_visitors": count_int})
+    count_int = 1 + count_int
+    print(count_int)
+    newvalues = { "$set": { "count_visitors": count_int } }
+    collection.update(myquery, newvalues)

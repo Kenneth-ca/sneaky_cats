@@ -37,8 +37,9 @@
         <div class="masthead-content">
             <div class="container">
                 <h1 class="masthead-heading mb-0">Sneaky Cats</h1>
-                <h2 class="masthead-subheading mb-0">An unlimited collection of lovely cats!</h2><a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="{{ url_for('static', filename='download/app.apk') }}">Download</a></div>
-        </div>
+                <h2 class="masthead-subheading mb-0">An unlimited collection of lovely cats!</h2>
+                <a class="btn btn-primary btn-xl rounded-pill mt-5" role="button" href="{{ url_for('download') }}" onClick="onClick()" >Download</a></div>     
+            </div>
         <div class="bg-circle-1 bg-circle"></div>
         <div class="bg-circle-2 bg-circle"></div>
         <div class="half"></div>
@@ -95,6 +96,7 @@
     </footer>
     <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/more.js') }}"></script>
 </body>
 
 </html>
