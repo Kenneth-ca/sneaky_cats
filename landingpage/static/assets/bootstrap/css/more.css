@@ -18,7 +18,7 @@ header.masthead .bg-circle-2 {
 	right: -25rem;
 	background-image: url(/static/assets/img/background_image01.jpg);
 }
-header.masthead h2.about_title {
+header.masthead h2.about_title, header.masthead h2.download_title {
 	font-size: 3.5rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -36,6 +36,19 @@ header.masthead p {
 	background-color: #fff;
 	margin-block-start: 1em;
 	margin-block-end: 1em;
-    margin-inline-start: 10em;
-    margin-inline-end: 10em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
 }
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	width: 80%;
+  }
+  table {
+	border-spacing: 15px;
+  }
