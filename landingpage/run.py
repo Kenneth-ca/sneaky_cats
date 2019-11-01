@@ -28,14 +28,6 @@ def about():
 @app.route('/download', strict_slashes=False)
 def download():
     """ Route to download app """
-    CatData = request.get_json()
-    count = mongofile.collection.find_one({"count_visitors":{'$exists': True}})
-    if count == None:
-        mongofile.InsertDataCats({"count_visitors": "0"})
-    else:
-        print(count)
-        count_int = int(count["count_visitors"])
-        mongofile.UpdateCountCats(count_int)
     return render_template('download.html')
 
 
