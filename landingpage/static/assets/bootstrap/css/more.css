@@ -27,6 +27,11 @@ header.masthead h2.about_title, header.masthead h2.download_title {
 	background-color: #fff;
 }
 
+header.masthead {
+	padding-top: calc(2rem + 72px);
+	padding-bottom: 2rem;
+}
+
 header.masthead p {
 	font-size: 1rem;
 	font-weight: 400;
