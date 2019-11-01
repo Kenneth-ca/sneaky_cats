@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats",
+      "sdkFolder": "/home/helpdesk/Android/Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app",
+      "makeFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/src/main/cpp/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/.cxx",
+      "cxxFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx",
+      "ndkFolder": "/home/helpdesk/Android/Sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "soFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates/cmake/release/lib",
+    "objFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64",
+  "jsonFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64",
+  "objFolder": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates/cmake/release/obj/x86_64",
+  "buildCommandFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/build_command.txt",
+  "buildOutputFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/build_output.txt",
+  "modelOutputFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cxx/release/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/release/x86_64/compile_commands.json"
+}

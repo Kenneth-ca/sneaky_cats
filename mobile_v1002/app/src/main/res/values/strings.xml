@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sneaky Cats</string>
+    <string name="txt_message">Enter a message</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_navigator">Choose Cat</string>
+    <string name="btn_whatsapp">Test WhatsApp</string>
+</resources>

@@ -1,0 +1,7 @@
+# ninja log v5
+0	3	0	clean	8a89ff5a81bf759f
+0	3	0	clean	8a89ff5a81bf759f
+0	483	1572585601	CMakeFiles/native-lib.dir/native-lib.cpp.o	766fa6637ee17045
+484	840	1572585601	/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	207d6da93e52bd2d
+0	4	0	clean	8a89ff5a81bf759f
+0	4	0	clean	8a89ff5a81bf759f
