@@ -28,7 +28,7 @@ def about():
 @app.route('/download', strict_slashes=False)
 def download():
     """ Route to download app """
-    pass
+    return render_template('download.html')
 
 
 @app.route('/phone/json', methods=['POST'])
@@ -38,6 +38,17 @@ def postJsonHandler():
     CatData.update({"FECHA": datetime.now().strftime("%m/%d/%Y, %H:%M:%S")})
     mongofile.InsertDataCats(CatData)
     return '{"status":"200"}'
+
+
+@app.route('/phone/report', strict_slashes=False)
+def report():
+    """ Route to present report """
+    print("Hola")
+    data = mongofile.collection.find()
+    list = []
+    for c in data:
+        list.append(c)
+    return render_template('report.html', list=list)
 
 
 if __name__ == '__main__':

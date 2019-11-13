@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo ps axu | grep run.py | awk '{print "sudo kill -9 "$2}' | sh

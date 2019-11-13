@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/home/helpdesk/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/helpdesk/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnative_lib_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/helpdesk/Android/Sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
+    "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/src/main/cpp/CMakeLists.txt",
+    "/home/helpdesk/Android/Sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/home/helpdesk/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/home/helpdesk/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86_64": {
+      "buildCommand": "/home/helpdesk/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/helpdesk/AndroidStudioProjects/SneakyCats/app/.cxx/cmake/debug/x86_64\" native-lib",
+      "buildType": "debug",
+      "toolchain": "25279788",
+      "abi": "x86_64",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/src/main/cpp/native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/home/helpdesk/AndroidStudioProjects/SneakyCats/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so"
+    }
+  },
+  "toolchains": {
+    "25279788": {
+      "cppCompilerExecutable": "/home/helpdesk/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
